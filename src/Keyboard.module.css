@@ -1,0 +1,30 @@
+/*  styles for all buttons in   keyboard */
+.btn {
+    width: 100%; /* Full width of the container */
+    border: 3px solid black; /* Black border around button */
+    background: none; /* Transparent background */
+    aspect-ratio: 1 / 1; /* Square aspect ratio */
+    font-size: 2.5rem; /* Large font size for readability */
+    text-transform: uppercase; /* Uppercase text */
+    padding: .5rem; /* Padding inside the button */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: black; /* Default text color */
+}
+
+/* Styles when a button is clicked or guessed correctly */
+.btn.active {
+    background-color: hsl(200, 100%, 50%); /* Light blue background */
+    color: white; /* White text color */
+}
+
+/* Styles  for inactive buttons (letters already guessed incorrectly) */
+.btn.inactive {
+    opacity: .3; /* Reduced opacity for inactive state */
+}
+
+/* Styles when a button is hovered and not disabled */
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled) {
+    background-color: hsl(200, 100%, 75%); /* Lighter blue background */
+}
